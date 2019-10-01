@@ -18,5 +18,7 @@ public class Main {
         } else {
             System.out.println("Elemento não encontrado");
         }
+
+        arvore.verifyBalance();
     }
 }

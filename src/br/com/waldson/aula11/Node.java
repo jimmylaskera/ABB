@@ -68,4 +68,13 @@ public class Node {
     public void setRight(Node right) {
         this.right = right;
     }
+
+    public int isBalanced(Node n) {
+        int result = 0;
+        if (left == null) result--;
+        else result += isBalanced(left);
+        if (right == null) result++;
+        else result += isBalanced(right);
+        return result;
+    }
 }

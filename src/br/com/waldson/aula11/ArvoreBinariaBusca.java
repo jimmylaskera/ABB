@@ -44,4 +44,10 @@ public class ArvoreBinariaBusca {
         return raiz.search(key);
     }
 
+    public void verifyBalance() {
+        int result = isBalanced(raiz);
+        if (result > 0) System.out.println("Arvore desbalanceada para a direita");
+        if (result < 0) System.out.println("Arvore desbalanceada para a esquerda");
+        if (result == 0) System.out.println("Arvore balanceada");
+    }
 }
